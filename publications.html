@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>Publications</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+        <link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/publications.css" />
+		<script src="./js/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<header class="header-box">
+			<div class="logo-box">
+                <a href="https://www.westlake.edu.cn/">
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
+                </a>
+            </div>
+			<div class="r-box">
+				<nav class="menu-box">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li class="active"><a href="publications.html">Publications</a></li>
+						<li><a href="facilities.html">Facilities</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="joinus.html">Join us</a></li>
+					</ul>
+				</nav>
+				<div class="splitLine"></div>
+				<div class="language-box">
+					<img src="./img/icon_language.png" alt="">
+					<span>CN</span>
+				</div>
+			</div>
+		</header>
+		<section class="banner-box">
+			<img src="./images/research/banner.png" alt="">
+			<div class="content">
+				<h5>Publications</h5>
+			</div>
+		</section>
+		<main class="main-box">
+			<div class="item-box">
+				<div class="list-box">
+					<ul id="list1">
+						<li>R. Baumgartner, H. Fu, Z. Song, Y. Lin* and J. Cheng*, “Cooperative Polymerization of α-Helices Induced by Macromolecular Architecture,” Nature Chemistry, 9, 614-622 (2017).</li>
+						<li>Y. Ren#, H. Fu#, R. Baumgartner, Y. Zhang, J. Cheng*, and Y. Lin*, “Folding Cooperativity of Synthetic Polypeptides with or without “Tertiary” Interactions,” ACS Macro Letters, 6, 733–737 (2017).</li>
+						<li>Z. Song, H. Fu, J. Wang, J. Hui, T. Xue, L. Pacheco, H. Yan, R. Baumgartner, Z. Wang, Y. Xia, X. Wang, L. Yin, C. Chen, J. Rodriguez-Lopez, A. Ferguson, Y. Lin*, J. Cheng*, “Synthesis of polypeptides via bioinspired polymerization of in situ purified N-carboxyanhydrides”, Proceedings of the National Academy of Sciences, 116, 10658 – 10663 (2019).</li>
+						<li>Z. Song#, H. Fu#, R. Baumgartner#, L. Zhu, K. Shih, Y. Xia, X. Zheng, L. Yin, C. Chipot*, Y. Lin*, J. Cheng*, “Enzyme-mimetic self-catalyzed polymerization of polypeptide helices”, Nature Communications, 10, 5470 (2019).</li>
+						<li>X. Lu#, H. Fu#, K. Shih, F. Jia, Y. Sun, D. Wang, Y. Wang, S. Ekatan, M. Nieh*, Y. Lin*, K. Zhang*, “DNA-mediated step-growth polymerization of bottlebrush macromonomers”, Journal of American Chemical Society, 142, 10297-10301 (2020).</li>
+						<li>T. Yang#, K. Benson#, H. Fu#, T. Xue, Z. Song, H. Duan, H. Xia, A. Kalluri, J. He, J. Cheng*, C. V. Kumar*, Y. Lin*, “Modelling and designing particle-regulated amyloid-like assembly of synthetic polypeptides in aqueous solution”, Biomacromolecules, 23, 196-209 (2022).</li>
+						<li>H. Fu#, R. Baumgartner#, Z. Song#, C. Chen, J. Cheng*, Y. Lin*, “Generalized model of cooperative polymerization: connecting the supramolecular binding interactions with the catalytic behavior”, Macromolecules, 55, 2041-2050 (2022).</li>
+						<li>H. Fu*, J. Huang, J. J. B. van der Tol, L. Su, Y. Wang, S. Dey, P. Zijlstra, G. Fytas, G. Vantomme, P. Y. W. Dankers, E. W. Meijer*, “Supramolecular polymers form tactoids through liquid-liquid phase separation”, Nature, 626, 1011-1018 (2024).</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer-box">
+			<div class="content-box">
+				<div class="logo-box">
+					<img src="./img/icon_footerLogo_l.png" alt="">
+				</div>
+				<div class="middle-box">
+					<h6>Macromolecular Physical Chemistry (MPC) Laboratory</h6>
+					<p>
+						Address
+						<span>: E3-104 No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, PR. China</span>
+					</p>
+					<p>
+						Email
+						<span>: fuhailin@westlake.edu.cn</span>
+					</p>
+					<div class="filings-box">
+						<p>浙ICP备18025489号</p>
+						<p>浙公安备33010602007514号</p>
+						<p>Copyright © Westlake University. All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="sponsor-box">
+					<p>Research</p>
+					<p>Publications</p>
+					<p>News</p>
+					<p>Join Us</p>
+				</div>
+			</div>
+		</footer>
+		<script>
+			$(function(){
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+					if (designSize == 3.75) {
+						width = width >= 375 ? 375 : width
+					}
+					if (designSize == 14.4) {
+						width = width >= 1440 ? 1440 : width
+					}
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
+				document.body.classList.add('pc-class');
+				setRem(14.4);
+				window.onresize = function() {
+					setRem(14.4);
+				};
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+.item-box {
+    padding: .72rem 1.4rem;
+    background-color: #fff;
+    max-width: 14.4rem;
+    margin: 0 auto;
+}
+.item-box .list-box {
+    width: 100%;
+}
+.item-box .list-box ul {
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+}
+.item-box .list-box ul li {
+    font-family: Avenir-Roman;
+    font-size: .2rem;
+    line-height: .28rem;
+    margin-bottom: .32rem;
+    color: rgba(0, 0, 0, .65);
+    counter-increment: number;
+}
+.item-box .list-box ul li:first-child {
+    margin-bottom: 0;
+}
+.item-box .list-box ul li::before {
+    font-family: Avenir-Medium;
+    font-weight: 500;
+    content: counter(number)".";
+    font-size: .2rem;
+    color: rgba(0, 0, 0, .85);
+    margin-right: .04rem;
+}

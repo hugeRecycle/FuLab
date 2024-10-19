@@ -1,0 +1,64 @@
+.item-box {
+	padding: .72rem 1.4rem;
+	background-color: #fff;
+	max-width: 14.4rem;
+	margin: 0 auto;
+}
+.item-box h5 {
+    line-height: .3rem;
+	color: #0C3375;
+	font-size: .3rem;
+	font-family: Avenir-Medium;
+	font-weight: 500;
+}
+.item-box h6 {
+    line-height: .3rem;
+	color: rgba(0,0,0,0.65);
+	font-size: .22rem;
+	font-family: Avenir-Roman;
+    margin-top: .32rem;
+}
+.item-box .list-box {
+    margin-top: .1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-box .list-box li {
+    margin-top: .4rem;
+    margin-right: .7rem;
+    flex: 0 0 calc(33% - 0.7rem);
+    background-color: #F5F5F5;
+    padding: .16rem .16rem .27rem;
+    box-sizing: border-box;
+}
+.item-box .list-box li:nth-child(3n) {
+    margin-right: 0;
+}
+.item-box .list-box li div {
+    width: 3.06rem;
+    margin-bottom: .24rem;
+}
+.item-box .list-box li div img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.item-box .list-box li p {
+    padding-top: .16rem;
+    line-height: .24rem;
+	color: rgba(0,0,0,0.85);
+	font-size: .17rem;
+	font-family: Avenir-Medium;
+	font-weight: 500;
+    position: relative;
+}
+.item-box .list-box li p::before {
+    content: "";
+    display: block;
+    width: .52rem;
+    height: .02rem;
+    position: absolute;
+    top: 0;
+	left: 0;
+    background: #E58811;
+}

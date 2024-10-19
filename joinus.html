@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>Join us</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+        <link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/joinus.css" />
+		<script src="./js/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<header class="header-box">
+			<div class="logo-box">
+                <a href="https://www.westlake.edu.cn/">
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
+                </a>
+            </div>
+			<div class="r-box">
+				<nav class="menu-box">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="publications.html">Publications</a></li>
+						<li><a href="facilities.html">Facilities</a></li>
+						<li><a href="news.html">News</a></li>
+						<li class="active"><a href="joinus.html">Join us</a></li>
+					</ul>
+				</nav>
+				<div class="splitLine"></div>
+				<div class="language-box">
+					<img src="./img/icon_language.png" alt="">
+					<span>CN</span>
+				</div>
+			</div>
+		</header>
+		<section class="banner-box">
+			<img src="./images/research/banner.png" alt="">
+			<div class="content">
+				<h5>Join us</h5>
+			</div>
+		</section>
+		<main class="main-box">
+            <div class="item-box">
+				<div class="article-container">
+					<h5>CONTACT US</h5>
+					<p>We have several open positions for postdocs, graduate students and research assistants. Our lab is committed to training the next generation of scientists. We endeavor to provide an innovative, rigorous, and collegial research environment for our trainees, and offer continuous support for the career growth of young scientists.</p>
+				</div>
+			</div>
+			<div class="bgColor-F5F5F5">
+				<div class="item-box apply-box bgColor-F5F5F5">
+					<div class="img-box">
+						<img src="./images/joinus/img_img1.png" />
+					</div>
+					<div class="article-container">
+						<h5>HOW TO APPLY</h5>
+						<p>These positions are due to commence as soon as possible.</p>
+						<p>To apply, please send the following documents in English as a PDF file to fuhailin@westlake.edu.cn, and indicate applied position in the email subject as (position name_candidate name).</p>
+					</div>
+					<div class="clean"></div>
+				</div>
+			</div>
+			<div class="item-box">
+				<div class="article-container">
+					<h5>ALL OPPORTUNITIES</h5>
+					<ul>
+						<li>
+							<h6>Research Assistant</h6>
+							<p>Job description: Assist with lab member’s projects and the laboratory operation. (The research assistant with outstanding work performance can join in the doctoral programme)</p>
+							<p>Specific link: https://www.westlake.edu.cn/admissions aid/graduate/</p>
+						</li>
+						<li>
+							<h6>Graduate Students</h6>
+							<p>Job description: Assist with lab member’s projects and the laboratory operation. (The research assistant with outstanding work performance can join in the doctoral programme)</p>
+							<p>Specific link: https://www.westlake.edu.cn/admissions aid/graduate/</p>
+						</li>
+						<li>
+							<h6>Postdoctoral Researchers</h6>
+							<p>Job description: Assist with lab member’s projects and the laboratory operation. (The research assistant with outstanding work performance can join in the doctoral programme)</p>
+							<p>Specific link: https://www.westlake.edu.cn/admissions aid/graduate/</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer-box">
+			<div class="content-box">
+				<div class="logo-box">
+					<img src="./img/icon_footerLogo_l.png" alt="">
+				</div>
+				<div class="middle-box">
+					<h6>Macromolecular Physical Chemistry (MPC) Laboratory</h6>
+					<p>
+						Address
+						<span>: E3-104 No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, PR. China</span>
+					</p>
+					<p>
+						Email
+						<span>: fuhailin@westlake.edu.cn</span>
+					</p>
+					<div class="filings-box">
+						<p>浙ICP备18025489号</p>
+						<p>浙公安备33010602007514号</p>
+						<p>Copyright © Westlake University. All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="sponsor-box">
+					<p>Research</p>
+					<p>Publications</p>
+					<p>News</p>
+					<p>Join Us</p>
+				</div>
+			</div>
+		</footer>
+		<script>
+			$(function(){
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+					if (designSize == 3.75) {
+						width = width >= 375 ? 375 : width
+					}
+					if (designSize == 14.4) {
+						width = width >= 1440 ? 1440 : width
+					}
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
+				document.body.classList.add('pc-class');
+				setRem(14.4);
+				window.onresize = function() {
+					setRem(14.4);
+				};
+			});
+		</script>
+	</body>
+</html>
