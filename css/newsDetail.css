@@ -1,0 +1,69 @@
+.item-box {
+	padding: .72rem 1.4rem;
+	background-color: #fff;
+	max-width: 14.4rem;
+	margin: 0 auto;
+}
+.back-box {
+    display: flex;
+    align-items: center;
+    height: .25rem;
+    font-size: .18rem;
+    color: rgba(0,0,0,0.65);
+    font-family: Avenir-Medium;
+    font-weight: 500;
+    margin-bottom: .37rem;
+}
+.back-box img {
+    width: .16rem;
+    display: block;
+    margin-right: .09rem;
+}
+.back-box a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.65);
+}
+.back-box span:nth-child(3) {
+    margin: 0 .12rem;
+}
+.back-box span:last-child {
+    color: #E58811;
+}
+.item-box li {
+    padding: .16rem 0 .32rem;
+    border-bottom: .01rem solid rgba(0,0,0,0.1);
+}
+.item-box li:last-child {
+    border-color: transparent;
+}
+.item-box h5 {
+    line-height: .41rem;
+	color: rgba(0,0,0,0.85);
+	font-size: .3rem;
+	font-family: Avenir-Medium;
+	font-weight: 500;
+}
+.item-box h6 {
+    margin-top: .12rem;
+    line-height: .27rem;
+	color: #2157A8;
+	font-size: .2rem;
+	font-family: Avenir-Medium;
+	font-weight: 500;
+}
+.item-box .article-container {
+    margin-top: .32rem;
+    padding-top: .06rem;
+    border-top: .01rem solid rgba(0,0,0,0.1);
+}
+.item-box .article-container p {
+    margin-top: .26rem;
+    line-height: .3rem;
+	color: rgba(0,0,0,0.65);
+	font-size: .2rem;
+	font-family: Avenir-Roman;
+}
+.item-box .article-container img {
+    margin: .26rem auto 0;
+    display: block;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>News</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+        <link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/newsDetail.css" />
+		<script src="./js/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<header class="header-box">
+			<div class="logo-box">
+                <a href="https://www.westlake.edu.cn/">
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
+                </a>
+            </div>
+			<div class="r-box">
+				<nav class="menu-box">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="publications.html">Publications</a></li>
+						<li><a href="facilities.html">Facilities</a></li>
+						<li class="active"><a href="news.html">News</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+						<li><a href="joinus.html">Join us</a></li>
+					</ul>
+				</nav>
+				<div class="splitLine"></div>
+				<div class="language-box">
+					<img src="./img/icon_language.png" alt="">
+					<span>CN</span>
+				</div>
+			</div>
+		</header>
+		<section class="banner-box">
+			<img src="./images/research/banner.png" alt="">
+			<div class="content">
+				<h5>News</h5>
+			</div>
+		</section>
+		<main class="main-box">
+			<div class="item-box">
+                <div class="back-box">
+                    <img src="./img/icon_back.png" />
+                    <a href="javascript:history.go(-1);">Back</a>
+                    <span>&gt;</span>
+                    <span>Content</span>
+                </div>
+                <div>
+                    <h5>Latest contribution from Prof. Mohamad Sawan's research group: a cSP-based multi-virus biosensor for monkeypox virus</h5>
+                    <h6>2024-11-14</h6>
+                    <div class="article-container">
+                        <p>Global responses to pandemics emphasize the critical need for biosensors to monitor outbreaks during major public health events. The Monkeypox Virus (MPXV) pandemic is spreading, MPXV infections emphasize the need for rapid and sensitive pathogen diagnostics. This action is crucial for guiding timely and effective clinical treatments and vaccination strategies. However, current detection technologies, including real-time polymerase chain reaction tests (real-time PCR) and isothermal amplification-related methods, are flawed because they require rigidly structured environments and well-trained personnel to perform the precise steps. Therefore, an easy, rapid, and automated biosensing method to efficiently detect MPXV in clinical samples is required.</p>
+                        <img src="./images/news/img_img1.png" />
+                        <p>Global responses to pandemics emphasize the critical need for biosensors to monitor outbreaks during major public health events. The Monkeypox Virus (MPXV) pandemic is spreading, MPXV infections emphasize the need for rapid and sensitive pathogen diagnostics. This action is crucial for guiding timely and effective clinical treatments and vaccination strategies. However, current detection technologies, including real-time polymerase chain reaction tests (real-time PCR) and isothermal amplification-related methods, are flawed because they require rigidly structured environments and well-trained personnel to perform the precise steps. Therefore, an easy, rapid, and automated biosensing method to efficiently detect MPXV in clinical samples is required.</p>
+                        <p>Global responses to pandemics emphasize the critical need for biosensors to monitor outbreaks during major public health events. The Monkeypox Virus (MPXV) pandemic is spreading, MPXV infections emphasize the need for rapid and sensitive pathogen diagnostics. This action is crucial for guiding timely and effective.</p>
+                    </div>
+                </div>
+            </div>
+		</main>
+		<footer class="footer-box">
+			<div class="content-box">
+				<div class="logo-box">
+					<img src="./img/icon_footerLogo_l.png" alt="">
+                    <img src="./img/icon_footerLogo_r.png" alt="">
+				</div>
+				<div class="middle-box">
+					<h6>Macromolecular Physical Chemistry (MPC) Laboratory</h6>
+					<p>
+						Address
+						<span>: E3-104 No. 600 Dunyu Road, XihuDistrict, Hangzhou, Zhejiang, 310030, PR. China</span>
+					</p>
+					<p>
+						Email
+						<span>: fuhailin@westlake.edu.cn</span>
+					</p>
+					<div class="filings-box">
+						<p>浙ICP备18025489号</p>
+						<p>浙公安备33010602007514号</p>
+						<p>Copyright © Westlake University. All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="sponsor-box">
+					<p>Research</p>
+					<p>Publications</p>
+					<p>News</p>
+					<p>Join Us</p>
+				</div>
+			</div>
+		</footer>
+		<script>
+			$(function(){
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+					if (designSize == 3.75) {
+						width = width >= 375 ? 375 : width
+					}
+					if (designSize == 14.4) {
+						width = width >= 1440 ? 1440 : width
+					}
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
+				document.body.classList.add('pc-class');
+				setRem(14.4);
+				window.onresize = function() {
+					setRem(14.4);
+				};
+			});
+		</script>
+	</body>
+</html>

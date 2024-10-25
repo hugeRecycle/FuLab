@@ -32,11 +32,16 @@
 }
 .item-box ul li .left-box div {
     margin-top: .23rem;
-    background-image: url('../images/team/boxBg.png');
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: 100% 100%;
     padding: .15rem .22rem;
+    position: relative;
+    z-index: 9;
+}
+.item-box ul li .left-box div img {
+    width: 2.7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .item-box ul li .left-box div p {
     color: #2157A8;

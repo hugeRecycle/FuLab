@@ -130,13 +130,16 @@ div, a {box-sizing: border-box}
 	align-items: flex-start;
 }
 .footer-box .logo-box {
-	display: flex;
 	float: left;
 }
 .footer-box .logo-box img {
-	width: 2。55rem;
+	width: 2.55rem;
 	height: .8rem;
+	margin-bottom: .26rem;
 	display: block;
+}
+.footer-box .logo-box img:last-child {
+	margin-bottom: 0;
 }
 .footer-box .middle-box {
 	flex: 1;
@@ -183,9 +186,9 @@ div, a {box-sizing: border-box}
 	font-size: .17rem;
 	line-height: .25rem;
 	margin-bottom: .1rem;
-	color: #fff;
 	font-family: Avenir-Medium;
 	font-weight: 500;
+	color: #fff;
 }
 
 

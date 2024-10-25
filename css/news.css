@@ -11,6 +11,9 @@
 .item-box li:last-child {
     border-color: transparent;
 }
+.item-box li a {
+    text-decoration: none;
+}
 .item-box li h5 {
     line-height: .27rem;
 	color: rgba(0,0,0,0.85);
